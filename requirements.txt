@@ -1,0 +1,8 @@
+pandas
+SQLAlchemy
+
+### additional potential ones
+
+polars
+os
+sqlite3
