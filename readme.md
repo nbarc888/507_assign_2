@@ -7,15 +7,18 @@ Repo Scaffold
 | data |  |
 |  | patients.csv |
 | images |  |
+| | image files |
 | sql |  |
+|  | additional.sql |
 |  | analysis.sql |
 |  | schema.sql |
 | src |  |
 |  | create_db.py |
 |  | import_csv.py |
 | Eval.txt |  |
-| blank.sql |  |
+| additional.db | |
 | clinic_simple.db |  |
+| readme.md |  |
 | requirements.txt |  |
 
 Download links: 
@@ -89,6 +92,7 @@ ORDER BY age_years DESC
 SELECT AVG(age_years)
 FROM age_eval;
 ```
+![ additional ](images/imagef.JPG)
 
 ## Query Results - see eval.txt for full results
 
