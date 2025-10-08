@@ -39,9 +39,25 @@ Alternate to DB Browser for VS Code - SQlite Extension: https://marketplace.visu
 
 ### Alternate way to generate db via google colab 
 1. Upload patients.csv into colab notebook
-
-2. 
-
+2. Input following codes
+   ```bash
+   import pandas as pd
+   import sqlite3
+   import sqlalchemy import create_engine
+   import matplotlib.pyplot as plt
+   ```
+   ```bash
+   data = pd.read_csv('/content/patients.csv')
+   data
+   ```
+   ```bash
+   sqlite3.connect('patientstest.db')
+   ```
+   ```bash
+   conn = create_engine('sqlite:///clinic_simple.db')
+   conn
+   ```
+   Then download the generated db file 
 
 ## Query Results - see eval.txt 
 
