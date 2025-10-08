@@ -99,13 +99,14 @@ FROM age_eval;
 
 ## Query Results - see eval.txt for full results
 
-#### Total amt of patients: 
+#### A: Total amt of patients: 
 Results that there is a total 500 total patients within records. 
 
 500 
+
 ![ amount ](images/imagea.JPG)
 
-#### Top primary diagnoses by count: 
+####  B: Top primary diagnoses by count: 
 
 The most common primary diagnosis code is I10 which is hypertension.
 | Primary_icd | Count |
@@ -123,7 +124,7 @@ The most common primary diagnosis code is I10 which is hypertension.
 
 ![ icd ](images/imageb.JPG)
 
-#### Office-visit CPTs since Jan 1, 2025 (CPT codes starting with 992)
+#### C: Office-visit CPTs since Jan 1, 2025 (CPT codes starting with 992)
 Most common cpt code with 992 is for outpatient or office visits. These visits are likely for follow-up or new chief complaint requiring evaluation. 
 
 | patient_id	| last_cpt	| last_visit_dt |
@@ -136,7 +137,7 @@ Most common cpt code with 992 is for outpatient or office visits. These visits a
 
 ![ office ](images/imagec.JPG)
 
-#### Age (approx) at last visit for the 5 oldest patients
+#### D: Age (approx) at last visit for the 5 oldest patients
 The 5 oldest patients at time of last visit are all aged 85. However pt P0372 has not made a visit within a year which would require follow-up call regarding status. If no update regarding status is found, case may require wellness-check from either police or adult protective services. 
 
 | patient_id | birth_date |	last_visit_dt | age_years |
