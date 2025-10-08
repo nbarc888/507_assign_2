@@ -92,7 +92,6 @@ ORDER BY age_years DESC
 SELECT AVG(age_years)
 FROM age_eval;
 ```
-![ additional ](images/imagef.JPG)
 
 ## Query Results - see eval.txt for full results
 
@@ -150,8 +149,9 @@ The 5 oldest patients at time of last visit are all aged 85. However pt P0372 ha
 
 Average age of patients within this dataset is 50 years.
 
-
 Average age: 50.424 
+
+![ additional ](images/imagef.JPG)
 
 ### Brief overview and explanation
 
