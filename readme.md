@@ -90,7 +90,7 @@ SELECT AVG(age_years)
 FROM age_eval;
 ```
 
-## Query Results - see eval.txt for full 
+## Query Results - see eval.txt for full results
 
 #### Total amt of patients: 
 500 
