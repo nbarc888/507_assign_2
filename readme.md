@@ -93,10 +93,14 @@ FROM age_eval;
 ## Query Results - see eval.txt for full results
 
 #### Total amt of patients: 
+Results that there is a total 500 total patients within records. 
+
 500 
 ![ amount ](images/imagea.JPG)
 
 #### Top primary diagnoses by count: 
+
+The most common primary diagnosis code is I10 which is hypertension.
 | Primary_icd | Count |
 |---|---|
 |I10	| 81 |
@@ -109,9 +113,12 @@ FROM age_eval;
 |E03.9	| 22 |
 |R51.9	| 21 |
 |I25.10	| 21 |
+
 ![ icd ](images/imageb.JPG)
 
 #### Office-visit CPTs since Jan 1, 2025 (CPT codes starting with 992)
+Most common cpt code with 992 is for outpatient or office visits. These visits are likely for follow-up or new chief complaint requiring evaluation. 
+
 | patient_id	| last_cpt	| last_visit_dt |
 |---|---|---|
 | P0126	| 99213	| 2025-09-09 | 
@@ -119,9 +126,12 @@ FROM age_eval;
 | P0383	| 99213	| 2025-09-09 |
 | P0424	| 99213	| 2025-09-09 |
 | P0282	| 99214	| 2025-09-08 |
+
 ![ office ](images/imagec.JPG)
 
 #### Age (approx) at last visit for the 5 oldest patients
+The 5 oldest patients at time of last visit are all aged 85. However pt P0372 has not made a visit within a year which would require follow-up call regarding status. If no update regarding status is found, case may require wellness-check from either police or adult protective services. 
+
 | patient_id | birth_date |	last_visit_dt | age_years |
 |---|---|---|---|
 | P0027	| 1940-04-11 |	2024-09-27 | 85 |
@@ -129,15 +139,16 @@ FROM age_eval;
 | P0108	| 1940-07-08 |	2025-01-09 | 85 |
 | P0129	| 1940-04-15 |	2025-07-01 | 85 |
 | P0372	| 1940-09-11 |	2024-04-18 | 85 |
+
 ![ eldest ](images/imaged.JPG)
 
 #### Average age of patients (Additional)
+
+Average age of patients within this dataset is 50 years.
+
+
 Average age: 50.424 
 
 ### Brief overview and explanation
 
 Primary findings within patient data show results such as patient identification number, date of birth, primary icd diagnosis, and last visit. Goal of this project is to convert a csv file into sql database. 
-
-Results show that out of the total 500 total patients, the most common primary diagnosis code is I10 which is hypertension. Average age of patients within this dataset is 50 years.   
-
-
