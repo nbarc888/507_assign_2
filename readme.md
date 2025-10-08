@@ -35,9 +35,11 @@ Alternate to DB Browser for VS Code - SQlite Extension: https://marketplace.visu
    ```bash
    python src/import_csv.py
    ```
-4. Open db file in DB Browser for SQlite and run scripts on sql/analysis.sql 
+4. Open db file in DB Browser for SQlite 
+5. To create and run queries input click on execute SQL and input the scripts seen in analysis.sql . Note: RUN ONLY QUERY CODE AT A TIME 
 
-### Alternate way to generate db via google colab 
+
+#### Alternate way to generate db via google colab 
 1. Upload patients.csv into colab notebook
 2. Input following codes
    ```bash
@@ -60,9 +62,28 @@ Alternate to DB Browser for VS Code - SQlite Extension: https://marketplace.visu
    ```bash
    data.to_sql('clinic_simple.db', conn , if_exists='replace', index=False)
    ```
-   
+
    Then download the generated db file 
+
+
+#### Alternate way to view and run queries using VS code extension SQlite 
 
 ## Query Results - see eval.txt 
 
+#### Total amt of patients: 
+500 
+
+#### Top primary diagnoses by count: 
+| Primary_icd | Count |
+|---|---|
+|I10	| 81 |
+|E11.9	| 73 |
+|E78.5	| 62 |
+|J45.909 | 46 |
+|F41.9	| 33 |
+|K21.9	| 30 |
+|M54.5	| 26 |
+|E03.9	| 22 |
+|R51.9	| 21 |
+|I25.10	| 21 |
 
