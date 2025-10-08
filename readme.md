@@ -64,7 +64,7 @@ Alternate to DB Browser for VS Code - SQlite Extension: https://marketplace.visu
    ```
 
    Then download the generated db file 
-
+![ google ](images/image1-google.JPG)
 
 #### Alternate way to view and run queries using VS code extension SQlite 
 
@@ -94,6 +94,7 @@ FROM age_eval;
 
 #### Total amt of patients: 
 500 
+![ amount ](images/imagea.JPG)
 
 #### Top primary diagnoses by count: 
 | Primary_icd | Count |
@@ -108,6 +109,7 @@ FROM age_eval;
 |E03.9	| 22 |
 |R51.9	| 21 |
 |I25.10	| 21 |
+![ icd ](images/imageb.JPG)
 
 #### Office-visit CPTs since Jan 1, 2025 (CPT codes starting with 992)
 | patient_id	| last_cpt	| last_visit_dt |
@@ -117,6 +119,7 @@ FROM age_eval;
 | P0383	| 99213	| 2025-09-09 |
 | P0424	| 99213	| 2025-09-09 |
 | P0282	| 99214	| 2025-09-08 |
+![ office ](images/imagec.JPG)
 
 #### Age (approx) at last visit for the 5 oldest patients
 | patient_id | birth_date |	last_visit_dt | age_years |
@@ -126,6 +129,7 @@ FROM age_eval;
 | P0108	| 1940-07-08 |	2025-01-09 | 85 |
 | P0129	| 1940-04-15 |	2025-07-01 | 85 |
 | P0372	| 1940-09-11 |	2024-04-18 | 85 |
+![ eldest ](images/imaged.JPG)
 
 #### Average age of patients (Additional)
 Average age: 50.424 
