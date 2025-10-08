@@ -71,7 +71,11 @@ Alternate to DB Browser for VS Code - SQlite Extension: https://marketplace.visu
 
 #### Alternate way to view and run queries using VS code extension SQlite 
 
-
+1. Download extension Sqlite (link attached above)
+2. Top searchbar select ">Open data base" and select db file to use
+3. Within top search bar then select ">Open new queries" 
+4. Insert analysis.sql scripts into queries code to run 
+5. Additional window will generate on the right hand side showing results. 
 
 #### Additional analysis - Average age of patients
 1. Go to execute sql and insert the following: 
