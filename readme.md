@@ -58,8 +58,9 @@ Alternate to DB Browser for VS Code - SQlite Extension: https://marketplace.visu
    conn
    ```
    ```bash
-  data.to_sql('clinic_simple.db', conn , if_exists='replace', index=False)
+   data.to_sql('clinic_simple.db', conn , if_exists='replace', index=False)
    ```
+   
    Then download the generated db file 
 
 ## Query Results - see eval.txt 
