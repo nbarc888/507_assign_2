@@ -51,11 +51,14 @@ Alternate to DB Browser for VS Code - SQlite Extension: https://marketplace.visu
    data
    ```
    ```bash
-   sqlite3.connect('patientstest.db')
+   sqlite3.connect('clinic_simple.db')
    ```
    ```bash
    conn = create_engine('sqlite:///clinic_simple.db')
    conn
+   ```
+   ```bash
+  data.to_sql('clinic_simple.db', conn , if_exists='replace', index=False)
    ```
    Then download the generated db file 
 
