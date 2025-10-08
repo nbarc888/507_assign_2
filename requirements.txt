@@ -1,5 +1,6 @@
 pandas
 SQLAlchemy
+pathlib
 
 ### additional potential ones
 
