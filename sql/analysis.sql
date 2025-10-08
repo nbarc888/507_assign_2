@@ -23,6 +23,7 @@ FROM patients
 ORDER BY age_years DESC
 LIMIT 5;
 
+
 -- E) Quick data quality check: any blank codes?
 SELECT *
 FROM patients

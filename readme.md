@@ -68,7 +68,29 @@ Alternate to DB Browser for VS Code - SQlite Extension: https://marketplace.visu
 
 #### Alternate way to view and run queries using VS code extension SQlite 
 
-## Query Results - see eval.txt 
+
+
+#### Additional analysis - Average age of patients
+1. Go to execute sql and insert the following: 
+```bash
+SELECT
+  patient_id,
+  birth_date,
+  last_visit_dt,
+  CAST((julianday(date('now')) - julianday(birth_date)) / 365.25 AS INT) AS age_years
+FROM patients
+ORDER BY age_years DESC
+```
+2. Then export the result to csv
+3. Go to file, import, and table from CSV file then select the new csv file
+    Make sure column names in first line is checked off 
+4. To calculate average based on new file go to execute sql and insert following code: 
+```bash
+SELECT AVG(age_years)
+FROM age_eval;
+```
+
+## Query Results - see eval.txt for full 
 
 #### Total amt of patients: 
 500 
@@ -86,4 +108,32 @@ Alternate to DB Browser for VS Code - SQlite Extension: https://marketplace.visu
 |E03.9	| 22 |
 |R51.9	| 21 |
 |I25.10	| 21 |
+
+#### Office-visit CPTs since Jan 1, 2025 (CPT codes starting with 992)
+| patient_id	| last_cpt	| last_visit_dt |
+|---|---|---|
+| P0126	| 99213	| 2025-09-09 | 
+| P0349	| 99213	| 2025-09-09 |
+| P0383	| 99213	| 2025-09-09 |
+| P0424	| 99213	| 2025-09-09 |
+| P0282	| 99214	| 2025-09-08 |
+
+#### Age (approx) at last visit for the 5 oldest patients
+| patient_id | birth_date |	last_visit_dt | age_years |
+|---|---|---|---|
+| P0027	| 1940-04-11 |	2024-09-27 | 85 |
+| P0100	| 1940-10-06 |	2025-01-14 | 85 |
+| P0108	| 1940-07-08 |	2025-01-09 | 85 |
+| P0129	| 1940-04-15 |	2025-07-01 | 85 |
+| P0372	| 1940-09-11 |	2024-04-18 | 85 |
+
+#### Average age of patients (Additional)
+Average age: 50.424 
+
+### Brief overview and explanation
+
+Primary findings within patient data show results such as patient identification number, date of birth, primary icd diagnosis, and last visit. Goal of this project is to convert a csv file into sql database. 
+
+Results show that out of the total 500 total patients, the most common primary diagnosis code is I10 which is hypertension. Average age of patients within this dataset is 50 years.   
+
 
